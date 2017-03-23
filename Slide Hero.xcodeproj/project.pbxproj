@@ -15,6 +15,10 @@
 		E72BAA9B1E82940400CC7D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72BAA991E82940400CC7D72 /* LaunchScreen.storyboard */; };
 		E72BAAA61E82940400CC7D72 /* Slide_HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BAAA51E82940400CC7D72 /* Slide_HeroTests.swift */; };
 		E72BAAB11E82940400CC7D72 /* Slide_HeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BAAB01E82940400CC7D72 /* Slide_HeroUITests.swift */; };
+		E72BAABF1E829B6100CC7D72 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72BAABE1E829B6100CC7D72 /* Extensions.swift */; };
+		E7CDC7D11E83587900F008D9 /* RBUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDC7CE1E83587900F008D9 /* RBUtility.swift */; };
+		E7CDC7D21E83587900F008D9 /* RBPerlinNoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDC7CF1E83587900F008D9 /* RBPerlinNoiseGenerator.swift */; };
+		E7CDC7D31E83587900F008D9 /* RBTerrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDC7D01E83587900F008D9 /* RBTerrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E72BAAAC1E82940400CC7D72 /* Slide HeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slide HeroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72BAAB01E82940400CC7D72 /* Slide_HeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide_HeroUITests.swift; sourceTree = "<group>"; };
 		E72BAAB21E82940400CC7D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72BAABE1E829B6100CC7D72 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E7CDC7CE1E83587900F008D9 /* RBUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBUtility.swift; sourceTree = "<group>"; };
+		E7CDC7CF1E83587900F008D9 /* RBPerlinNoiseGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPerlinNoiseGenerator.swift; sourceTree = "<group>"; };
+		E7CDC7D01E83587900F008D9 /* RBTerrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBTerrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		E72BAA8D1E82940400CC7D72 /* Slide Hero */ = {
 			isa = PBXGroup;
 			children = (
+				E7CDC7CD1E83586A00F008D9 /* RBUtility */,
 				E72BAA8E1E82940400CC7D72 /* AppDelegate.swift */,
 				E72BAA901E82940400CC7D72 /* art.scnassets */,
 				E72BAA921E82940400CC7D72 /* GameViewController.swift */,
@@ -106,6 +115,7 @@
 				E72BAA971E82940400CC7D72 /* Assets.xcassets */,
 				E72BAA991E82940400CC7D72 /* LaunchScreen.storyboard */,
 				E72BAA9C1E82940400CC7D72 /* Info.plist */,
+				E72BAABE1E829B6100CC7D72 /* Extensions.swift */,
 			);
 			path = "Slide Hero";
 			sourceTree = "<group>";
@@ -126,6 +136,16 @@
 				E72BAAB21E82940400CC7D72 /* Info.plist */,
 			);
 			path = "Slide HeroUITests";
+			sourceTree = "<group>";
+		};
+		E7CDC7CD1E83586A00F008D9 /* RBUtility */ = {
+			isa = PBXGroup;
+			children = (
+				E7CDC7CE1E83587900F008D9 /* RBUtility.swift */,
+				E7CDC7CF1E83587900F008D9 /* RBPerlinNoiseGenerator.swift */,
+				E7CDC7D01E83587900F008D9 /* RBTerrain.swift */,
+			);
+			name = RBUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72BAA931E82940400CC7D72 /* GameViewController.swift in Sources */,
+				E72BAABF1E829B6100CC7D72 /* Extensions.swift in Sources */,
+				E7CDC7D11E83587900F008D9 /* RBUtility.swift in Sources */,
+				E7CDC7D31E83587900F008D9 /* RBTerrain.swift in Sources */,
 				E72BAA8F1E82940400CC7D72 /* AppDelegate.swift in Sources */,
+				E7CDC7D21E83587900F008D9 /* RBPerlinNoiseGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QMRXG7JS2X;
 				INFOPLIST_FILE = "Slide Hero/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alanrabelo.Slide-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QMRXG7JS2X;
 				INFOPLIST_FILE = "Slide Hero/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alanrabelo.Slide-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +544,7 @@
 				E72BAAB71E82940400CC7D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E72BAAB81E82940400CC7D72 /* Build configuration list for PBXNativeTarget "Slide HeroTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +553,7 @@
 				E72BAABA1E82940400CC7D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E72BAABB1E82940400CC7D72 /* Build configuration list for PBXNativeTarget "Slide HeroUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +562,7 @@
 				E72BAABD1E82940400CC7D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
